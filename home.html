@@ -7,27 +7,19 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"></script>
         <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-        <link rel="stylesheet" type="text/css" href="style2.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
         <link rel="stylesheet" href="css/lightbox.min.css">
         <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script type="text/javascript">
             $(function () {
             $(document).scroll(function () {
 	           var $nav = $(".fixed-top");
 	               $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-	});
-});
-
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "nav") {
-        x.className += " responsive";
-    } else {
-        x.className = "nav";
-    }
-}
+	               });
+                });
         </script>
     </head>
 
@@ -35,35 +27,32 @@ function myFunction() {
         <nav class="navbar navbar-default fixed-top" role="navigation">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand"></a>
+                    <a class="navbar-brand" id="buttonbrand_id"></a>
                 </div>
             <ul class="nav" id="id="myTopnav"">
-                <li><a href="#">Strona Główna</a></li>
-                <li><a href="#">O nas</a></li>
-                <li><a href="#">Realizacje</a></li>
-                <li><a href="#">Kontakt</a></li>
+                <li><a href="#glowna" class="asd">Strona Główna</a></li>
+                <li><a href="#onas" class="asd">O nas</a></li>
+                <li><a href="#realizacje" class="asd" >Realizacje</a></li>
+                <li><a href="#kontakt" class="asd">Kontakt</a></li>
                 <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a></li>
             </ul>
             </div>
         </nav>
-        <section class="sec1">
+        <section class="sec1" id="glowna">
             <div class="filtr">
             <div class="container" id="slogan">
                     <row text-center>
                         <div class="col-md-12">
                             <h1 class="mb8 uppercase">Doskonałe meble na wymiar</h1>
                             <h4 class="h4">Napisz i zapoznaj się z naszą szczegółową ofertą </h4>
+<!--                            <button class="btn" type="button" onclick="scrollUp()" id="buttonTo">Kontakt</button>-->
+                            <button class="btn new-btn" id="aaa">Kontakt</button>
                         </div>
                     </row>
                 </div>
             </div>
         </section>
-
-
-
-        <h1 class="h1" style="text-align: center"> O nas </h1>
-
-
+        <h1 class="h1" style="text-align: center" id="onas"> O nas </h1>
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -73,15 +62,15 @@ function myFunction() {
 
                 </div>
                 <div class="col">
-                <p class="tekst_onas">„Plan B Meble na wymiar” to firma, którą tworzą  osoby posiadające 15-letnie doświadczenie w tej branży. To sprawia, że oferowane przez nas meble wyróżniają się ciekawym wzornictwem, trwałością oraz wysokim poziomem wykonania.
+                <p class="tekst_onas">„Plan B Meble na wymiar” to firma, którą tworzą  osoby posiadające 15-    letnie doświadczenie w tej branży. To sprawia, że oferowane przez nas meble wyróżniają się     ciekawym wzornictwem, trwałością oraz wysokim poziomem wykonania.
 
-Wykonujemy meble na wymiar: kuchnie, garderoby, szafy, meble łazienkowe, sklepowe i wszelkie inne nawet najbardziej nietypowe zabudowy meblowe.
+                    Wykonujemy meble na wymiar: kuchnie, garderoby, szafy, meble łazienkowe, sklepowe i wszelkie inne nawet najbardziej nietypowe zabudowy meblowe.
 
-Dokonujemy pomiarów, wizualizacji i wycen, które sporządzane są dla Państwa bezpłatnie. Sami wykonujemy i montujemy zamówione meble i zabudowy.
+                    Dokonujemy pomiarów, wizualizacji i wycen, które sporządzane są dla Państwa bezpłatnie. Sami wykonujemy i montujemy zamówione meble i zabudowy.
 
-Kompleksowo obsłużymy Państwa, od pomiaru do montażu, w bardzo przyjaznej atmosferze.
+                    Kompleksowo obsłużymy Państwa, od pomiaru do montażu, w bardzo przyjaznej atmosferze.
 
-Postaramy się, aby wykonane przez nas meble były dla Państwa spełnieniem marzeń o pięknym i funkcjonalnym  wnętrzu.</p>
+                    Postaramy się, aby wykonane przez nas meble były dla Państwa spełnieniem marzeń o pięknym i funkcjonalnym  wnętrzu.</p>
 
                 </div>
             </div>
@@ -89,7 +78,7 @@ Postaramy się, aby wykonane przez nas meble były dla Państwa spełnieniem mar
         </div>
         <div class="row">
             <div class="col-12">
-            <h1 class="h1" style="text-align: center"> Realizacje </h1>
+            <h1 class="h1" style="text-align: center" id="realizacje"> Realizacje </h1>
             </div>
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <section class="one-third">
@@ -152,6 +141,7 @@ Postaramy się, aby wykonane przez nas meble były dla Państwa spełnieniem mar
             </div>
 
 
+<!--
         <div class="row">
             <div class="col-12">
             <h1 class="h1" style="text-align: center"> Kontakt </h1>
@@ -180,15 +170,15 @@ Postaramy się, aby wykonane przez nas meble były dla Państwa spełnieniem mar
                     </div>
                 </div>
             </div>
-            <div class="col-sm-8">
+            <div class="col-sm-6">
                 <div class="vc_column-inner">
                     <div class="row">
-                        <div class="col-md-6 col-sm-6">
+                        <div class="col-md-6 col-sm-12">
                             <div class="contact">
                                 <h3>Email us</h3>
 
                                 <form>
-                                    <p>
+                                    <p class="imie">
                                         <label>Imie</label>
                                         <input type="text" name="imie">
                                     </p>
@@ -215,15 +205,98 @@ Postaramy się, aby wykonane przez nas meble były dla Państwa spełnieniem mar
                 </div>
             </div>
         </div>
+-->
 
 
-        <script src="js/lightbox-plus-jquery.min.js"></script>
+
+<!--        </div>-->
+
+        <div class="row">
+            <div class="col-12">
+            <h1 class="h1" style="text-align: center" id="kontakt"> Kontakt </h1>
+            <h5 class="h5" style="text-align: center">Zapraszamy do kontaktu, chętnie wyjaśnimy, opowiemy, wycenimy.</h5>
+            </div>
         </div>
         <div class="row">
+            <div class="col" id="dane">
+                        <h5 style="font-size: 30px; color: #333">ADRES</h5>
+                        <p style="color: #acafba; line-height: 28px; text-align: left; margin-top: 0; margin-bottom: 0;">
+                        Teodorów 136
+                            asdasdasd
+                            asdasdasd
+                        </p>
+                        <h5 style="font-size: 30px; color: #333; margin-top: 50px;">TELEFON</h5>
+                        <p style="color: #acafba; line-height: 28px; text-align: left; margin-top: 5px; margin-bottom: 0;">
+                            666 666 999
+                        </p>
+
+                        <h5 style="font-size: 30px; color: #333; margin-top: 50px;">EMAIL</h5>
+                        <p style="color: #acafba; line-height: 28px; text-align: left; margin-top: 0; margin-bottom: 0;">
+                            planB@gmail.com
+                        </p>
+            </div>
+
+            <div class="col-md-6">
+                <form class="form" id="contactForm" method="post" novalidate action="/send-scripts.php">
+                    <div class="form-row">
+                        <label for="field-name">Imie i Nazwisko</label>
+                        <input type="text" name="name" required id="field-name" placeholder="Imie i Nazwisko" data-error="Wypełnij to pole" pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+">
+                        <label for="field-name">Imie i Nazwisko</label>
+                        <input type="text" name="name" required id="field-name" placeholder="Imie i Nazwisko" data-error="Wypełnij to pole" pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+">
+                    </div>
+                    <div class="form-row">
+                        <label for="field-email">Email</label>
+                        <input type="email" name="email" required id="field-email" data-error="Wpisz poprawny email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+                    </div>
+                <div class="form-row">
+                    <label for="field-message">Wiadomość</label>
+                    <textarea name="message" required data-error="Musisz wypełnić pole" id="field-message" pattern=".+"></textarea>
+                </div>
+
+                <div class="form-row">
+                    <label class="checkbox-cnt">
+                        <input type="checkbox" data-error="Musisz wypełnić pole" name="regulation">
+                        <i class="state" aria-hidden="true"></i>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In libero arcu, vulputate sit amet mattis sit amet, ultrices in erat. Aenean suscipit arcu ac lorem lacinia ut scelerisque turpis commodo.</span>
+                    </label>
+                </div>
+            <div class="form-row">
+                <button type="submit" class="submit-btn">
+                    Wyślij
+                </button>
+            </div>
+</form>
+                <p>asa</p>
+                </div>
+            </div>
+
+        <div class="row">
 <!--            <button onclick="topFunction()" id="myBtn" title="Go to top"></button>-->
-            <img class="arrow" onclick="topFunction()" id="myBtn" src="array_up.png"/>
+            <img class="arrow" onclick="topFunction()" id="myBtn" src="array_up.png" title="Powrót na górę"/>
 
         </div>
+        <script type="text/javascript">
+                                function scrollUp(){
+                                    $('#buttonTo').onclick(function(){
+                                        $('html, body').animate({scrollTo: 800}, 'slow');
+                                    });
+                                };
+                            </script>
+<!--                <script src="bower_components/scrollreveal/dist/scrollreveal.min.js"></script>-->
+<!--
+<script type="text/javascript">
+    window.sr = ScrollReveal();
+    sr.reveal('.left', {
+        reset: true,
+        delay: 300,
+        distance: 0
+    });
+    sr.reveal('h2, p', {
+        reset: true,
+        delay: 300
+    });
+</script>
+-->
         <script type="text/javascript">
             window.onscroll = function(){scrollfunction()};
             function scrollfunction(){
@@ -238,5 +311,7 @@ Postaramy się, aby wykonane przez nas meble były dla Państwa spełnieniem mar
                  $('html, body').animate({scrollTop:0}, 'slow');
             }
         </script>
+        <script src="script2.js" type="text/javascript"></script>
+         <script src="js/lightbox-plus-jquery.min.js"></script>
     </body>
 </html>
