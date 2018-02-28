@@ -15,11 +15,11 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script type="text/javascript">
             $(function () {
-            $(document).scroll(function () {
-	           var $nav = $(".fixed-top");
-	               $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-	               });
+                $(document).scroll(function () {
+                    var $nav = $(".fixed-top");
+                    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
                 });
+            });
         </script>
     </head>
 
@@ -29,26 +29,26 @@
                 <div class="navbar-header">
                     <a class="navbar-brand" id="buttonbrand_id"></a>
                 </div>
-            <ul class="nav" id="id="myTopnav"">
-                <li><a href="#glowna" class="asd">Strona Główna</a></li>
-                <li><a href="#onas" class="asd">O nas</a></li>
-                <li><a href="#realizacje" class="asd" >Realizacje</a></li>
-                <li><a href="#kontakt" class="asd">Kontakt</a></li>
-                <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a></li>
-            </ul>
+                <ul class="nav">
+                    <li><a href="#glowna" >Strona Główna</a></li>
+                    <li><a href="#onas">O nas</a></li>
+                    <li><a href="#realizacje"  >Realizacje</a></li>
+                    <li><a href="#kontakt" >Kontakt</a></li>
+                    <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a></li>
+                </ul>
             </div>
         </nav>
         <section class="sec1" id="glowna">
             <div class="filtr">
-            <div class="container" id="slogan">
+                <div class="container" id="slogan">
                     <row text-center>
                         <div class="col-md-12">
                             <h1 class="mb8 uppercase">Doskonałe meble na wymiar</h1>
                             <h4 class="h4">Napisz i zapoznaj się z naszą szczegółową ofertą </h4>
-<!--                            <button class="btn" type="button" onclick="scrollUp()" id="buttonTo">Kontakt</button>-->
-                            <button class="btn new-btn" id="aaa">Kontakt</button>
+                            <!--                            <button class="btn" type="button" onclick="scrollUp()" id="buttonTo">Kontakt</button>-->
                         </div>
                     </row>
+                    <button class="btn new-btn" id="aaa">Kontakt</button>
                 </div>
             </div>
         </section>
@@ -62,15 +62,15 @@
 
                 </div>
                 <div class="col">
-                <p class="tekst_onas">„Plan B Meble na wymiar” to firma, którą tworzą  osoby posiadające 15-    letnie doświadczenie w tej branży. To sprawia, że oferowane przez nas meble wyróżniają się     ciekawym wzornictwem, trwałością oraz wysokim poziomem wykonania.
+                    <p class="tekst_onas">„Plan B Meble na wymiar” to firma, którą tworzą  osoby posiadające 15-    letnie doświadczenie w tej branży. To sprawia, że oferowane przez nas meble wyróżniają się     ciekawym wzornictwem, trwałością oraz wysokim poziomem wykonania.
 
-                    Wykonujemy meble na wymiar: kuchnie, garderoby, szafy, meble łazienkowe, sklepowe i wszelkie inne nawet najbardziej nietypowe zabudowy meblowe.
+                        Wykonujemy meble na wymiar: kuchnie, garderoby, szafy, meble łazienkowe, sklepowe i wszelkie inne nawet najbardziej nietypowe zabudowy meblowe.
 
-                    Dokonujemy pomiarów, wizualizacji i wycen, które sporządzane są dla Państwa bezpłatnie. Sami wykonujemy i montujemy zamówione meble i zabudowy.
+                        Dokonujemy pomiarów, wizualizacji i wycen, które sporządzane są dla Państwa bezpłatnie. Sami wykonujemy i montujemy zamówione meble i zabudowy.
 
-                    Kompleksowo obsłużymy Państwa, od pomiaru do montażu, w bardzo przyjaznej atmosferze.
+                        Kompleksowo obsłużymy Państwa, od pomiaru do montażu, w bardzo przyjaznej atmosferze.
 
-                    Postaramy się, aby wykonane przez nas meble były dla Państwa spełnieniem marzeń o pięknym i funkcjonalnym  wnętrzu.</p>
+                        Postaramy się, aby wykonane przez nas meble były dla Państwa spełnieniem marzeń o pięknym i funkcjonalnym  wnętrzu.</p>
 
                 </div>
             </div>
@@ -78,240 +78,121 @@
         </div>
         <div class="row">
             <div class="col-12">
-            <h1 class="h1" style="text-align: center" id="realizacje"> Realizacje </h1>
+                <h1 class="h1" style="text-align: center" id="realizacje"> Realizacje </h1>
             </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <section class="one-third">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <section class="one-third">
                     <a class="example-image-link" id="lightbox-img" href="img-left.jpg" data-lightbox="example-set" data-title="#"><img class="example-image" src="img-left.jpg" alt="#"/></a>
-                    </section>
-                </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                    <section class="one-third">
+                </section>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <section class="one-third">
                     <a class="example-image-link" id="lightbox-img" href="foto1.jpg" data-lightbox="example-set" data-title="#"><img class="example-image"src="foto1.jpg" alt="#"></a>
-                    </section></div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <section class="one-third">
+                </section></div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <section class="one-third">
                     <a class="example-image-link" id="lightbox-img" href="foto2.jpg" data-lightbox="example-set" data-title="#"><img class="example-image"src="foto2.jpg" alt="#"></a>
-                    </section></div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <section class="one-third">
+                </section></div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <section class="one-third">
                     <a class="example-image-link" id="lightbox-img" href="foto3.jpg" data-lightbox="example-set" data-title="#"><img class="example-image" src="foto3.jpg" alt="#"></a>
                 </section>
-                </div>
-                 <div class="col-md-3 col-sm-6 col-xs-12">
-                    <section class="one-third">
-                    <a class="example-image-link" id="lightbox-img" href="foto3.jpg" data-lightbox="example-set" data-title="#"><img class="example-image" src="foto3.jpg" alt="#"></a>
-                </section>
-                </div>
-             <div class="col-md-3 col-sm-6 col-xs-12">
-                    <section class="one-third">
-                    <a class="example-image-link" id="lightbox-img" href="foto3.jpg" data-lightbox="example-set" data-title="#"><img class="example-image" src="foto3.jpg" alt="#"></a>
-                </section>
-                </div>
-             <div class="col-md-3 col-sm-6 col-xs-12">
-                    <section class="one-third">
-                    <a class="example-image-link" id="lightbox-img" href="foto3.jpg" data-lightbox="example-set" data-title="#"><img class="example-image" src="foto3.jpg" alt="#"></a>
-                </section>
-                </div>
-             <div class="col-md-3 col-sm-6 col-xs-12">
-                    <section class="one-third">
-                    <a class="example-image-link" id="lightbox-img" href="foto3.jpg" data-lightbox="example-set" data-title="#"><img class="example-image" src="foto3.jpg" alt="#"></a>
-                </section>
-                </div>
-             <div class="col-md-3 col-sm-6 col-xs-12">
-                    <section class="one-third">
-                    <a class="example-image-link" id="lightbox-img" href="foto3.jpg" data-lightbox="example-set" data-title="#"><img class="example-image" src="foto3.jpg" alt="#"></a>
-                </section>
-                </div>
-             <div class="col-md-3 col-sm-6 col-xs-12">
-                    <section class="one-third">
-                    <a class="example-image-link" id="lightbox-img" href="foto3.jpg" data-lightbox="example-set" data-title="#"><img class="example-image" src="foto3.jpg" alt="#"></a>
-                </section>
-                </div>
-             <div class="col-md-3 col-sm-6 col-xs-12">
-                    <section class="one-third">
-                    <a class="example-image-link" id="lightbox-img" href="foto3.jpg" data-lightbox="example-set" data-title="#"><img class="example-image" src="foto3.jpg" alt="#"></a>
-                </section>
-                </div>
-             <div class="col-md-3 col-sm-6 col-xs-12">
-                    <section class="one-third">
-                    <a class="example-image-link" id="lightbox-img" href="foto3.jpg" data-lightbox="example-set" data-title="#"><img class="example-image" src="foto3.jpg" alt="#"></a>
-                </section>
-                </div>
             </div>
-
-
-<!--
-        <div class="row">
-            <div class="col-12">
-            <h1 class="h1" style="text-align: center"> Kontakt </h1>
-            <h5 class="h5" style="text-align: center">Zapraszamy do kontaktu, chętnie wyjaśnimy, opowiemy, wycenimy.</h5>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <section class="one-third">
+                    <a class="example-image-link" id="lightbox-img" href="foto3.jpg" data-lightbox="example-set" data-title="#"><img class="example-image" src="foto3.jpg" alt="#"></a>
+                </section>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <section class="one-third">
+                    <a class="example-image-link" id="lightbox-img" href="foto3.jpg" data-lightbox="example-set" data-title="#"><img class="example-image" src="foto3.jpg" alt="#"></a>
+                </section>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <section class="one-third">
+                    <a class="example-image-link" id="lightbox-img" href="foto3.jpg" data-lightbox="example-set" data-title="#"><img class="example-image" src="foto3.jpg" alt="#"></a>
+                </section>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <section class="one-third">
+                    <a class="example-image-link" id="lightbox-img" href="foto3.jpg" data-lightbox="example-set" data-title="#"><img class="example-image" src="foto3.jpg" alt="#"></a>
+                </section>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <section class="one-third">
+                    <a class="example-image-link" id="lightbox-img" href="foto3.jpg" data-lightbox="example-set" data-title="#"><img class="example-image" src="foto3.jpg" alt="#"></a>
+                </section>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <section class="one-third">
+                    <a class="example-image-link" id="lightbox-img" href="foto3.jpg" data-lightbox="example-set" data-title="#"><img class="example-image" src="foto3.jpg" alt="#"></a>
+                </section>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <section class="one-third">
+                    <a class="example-image-link" id="lightbox-img" href="foto3.jpg" data-lightbox="example-set" data-title="#"><img class="example-image" src="foto3.jpg" alt="#"></a>
+                </section>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <section class="one-third">
+                    <a class="example-image-link" id="lightbox-img" href="foto3.jpg" data-lightbox="example-set" data-title="#"><img class="example-image" src="foto3.jpg" alt="#"></a>
+                </section>
             </div>
         </div>
-        <div class="row-fluid">
-            <div class="col-sm-4">
-                <div class="vc_column-inner">
-                    <div class="wrapper">
-                        <h5 style="font-size: 30px; color: #333">ADRES</h5>
-                        <p style="color: #acafba; line-height: 28px; text-align: left; margin-top: 0; margin-bottom: 0;">
-                        Teodorów 136
-                            asdasdasd
-                            asdasdasd
-                        </p>
-                        <h5 style="font-size: 30px; color: #333; margin-top: 50px;">TELEFON</h5>
-                        <p style="color: #acafba; line-height: 28px; text-align: left; margin-top: 5px; margin-bottom: 0;">
-                            666 666 999
-                        </p>
-
-                        <h5 style="font-size: 30px; color: #333; margin-top: 50px;">EMAIL</h5>
-                        <p style="color: #acafba; line-height: 28px; text-align: left; margin-top: 0; margin-bottom: 0;">
-                            planB@gmail.com
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="vc_column-inner">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-12">
-                            <div class="contact">
-                                <h3>Email us</h3>
-
-                                <form>
-                                    <p class="imie">
-                                        <label>Imie</label>
-                                        <input type="text" name="imie">
-                                    </p>
-                                    <p>
-                                        <label>Nazwisko</label>
-                                        <input type="text" name="nazwisko">
-                                    </p>
-                                    <p>
-                                        <label>Email</label>
-                                        <input type="email" name="email">
-                                    </p>
-                                    <p>
-                                        <label>Telefon</label>
-                                        <input type="text" name="phone">
-                                    </p>
-                                    <p>
-                                        <label>Wiadomość</label>
-                                        <textarea name="wiadomosc" rows="5"></textarea>
-                                    </p>
-                                    <button type="submit">Wyslij</button>
-                                </form>
-                            </div>
-                    </div>
-                </div>
-            </div>
-        </div>
--->
-
-
-
-<!--        </div>-->
-
         <div class="row">
             <div class="col-12">
-            <h1 class="h1" style="text-align: center" id="kontakt"> Kontakt </h1>
-            <h5 class="h5" style="text-align: center">Zapraszamy do kontaktu, chętnie wyjaśnimy, opowiemy, wycenimy.</h5>
+                <h1 class="h1" style="text-align: center" id="kontakt"> Kontakt </h1>
+                <h5 class="h5" style="text-align: center">Zapraszamy do kontaktu, chętnie wyjaśnimy, opowiemy, wycenimy.</h5>
             </div>
         </div>
         <div class="row">
             <div class="col" id="dane">
-                        <h5 style="font-size: 30px; color: #333">ADRES</h5>
-                        <p style="color: #acafba; line-height: 28px; text-align: left; margin-top: 0; margin-bottom: 0;">
-                        Teodorów 136
-                            asdasdasd
-                            asdasdasd
-                        </p>
-                        <h5 style="font-size: 30px; color: #333; margin-top: 50px;">TELEFON</h5>
-                        <p style="color: #acafba; line-height: 28px; text-align: left; margin-top: 5px; margin-bottom: 0;">
-                            666 666 999
-                        </p>
+                <h5 style="font-size: 30px; color: #333">ADRES</h5>
+                <p style="color: #acafba; line-height: 28px; text-align: left; margin-top: 0; margin-bottom: 0;">
+                    Teodorów 136
+                    asdasdasd
+                    asdasdasd
+                </p>
+                <h5 style="font-size: 30px; color: #333; margin-top: 50px;">TELEFON</h5>
+                <p style="color: #acafba; line-height: 28px; text-align: left; margin-top: 5px; margin-bottom: 0;">
+                    666 666 999
+                </p>
 
-                        <h5 style="font-size: 30px; color: #333; margin-top: 50px;">EMAIL</h5>
-                        <p style="color: #acafba; line-height: 28px; text-align: left; margin-top: 0; margin-bottom: 0;">
-                            planB@gmail.com
-                        </p>
+                <h5 style="font-size: 30px; color: #333; margin-top: 50px;">EMAIL</h5>
+                <p style="color: #acafba; line-height: 28px; text-align: left; margin-top: 0; margin-bottom: 0;">
+                    planB@gmail.com
+                </p>
             </div>
 
-            <div class="col-md-6">
-                <form class="form" id="contactForm" method="post" novalidate action="/send-scripts.php">
-                    <div class="form-row">
-                        <label for="field-name">Imie i Nazwisko</label>
-                        <input type="text" name="name" required id="field-name" placeholder="Imie i Nazwisko" data-error="Wypełnij to pole" pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+">
-                        <label for="field-name">Imie i Nazwisko</label>
-                        <input type="text" name="name" required id="field-name" placeholder="Imie i Nazwisko" data-error="Wypełnij to pole" pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+">
-                    </div>
-                    <div class="form-row">
-                        <label for="field-email">Email</label>
-                        <input type="email" name="email" required id="field-email" data-error="Wpisz poprawny email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
-                    </div>
+            <form class="form" id="contactForm" method="post" novalidate action="/send-script.php">
                 <div class="form-row">
-                    <label for="field-message">Wiadomość</label>
+                    <label for="field-name">Name*</label>
+                    <input type="text" name="name" required id="field-name" data-error="Wypełnij to pole" pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+">
+                </div>
+                <div class="form-row">
+                    <label for="field-email">Email*</label>
+                    <input type="email" name="email" required id="field-email" data-error="Wpisz poprawny email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+                </div>
+                <div class="form-row">
+                    <label for="field-message">Message*</label>
                     <textarea name="message" required data-error="Musisz wypełnić pole" id="field-message" pattern=".+"></textarea>
                 </div>
-
                 <div class="form-row">
                     <label class="checkbox-cnt">
-                        <input type="checkbox" data-error="Musisz wypełnić pole" name="regulation">
+                        <input type="checkbox" required data-error="Musisz wypełnić pole" name="regulation">
                         <i class="state" aria-hidden="true"></i>
                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In libero arcu, vulputate sit amet mattis sit amet, ultrices in erat. Aenean suscipit arcu ac lorem lacinia ut scelerisque turpis commodo.</span>
                     </label>
                 </div>
-            <div class="form-row">
-                <button type="submit" class="submit-btn">
-                    Wyślij
-                </button>
-            </div>
-</form>
-                <p>asa</p>
+                <div class="form-row">
+                    <button type="submit" class="submit-btn">
+                        Wyślij
+                    </button>
                 </div>
-            </div>
-
-        <div class="row">
-<!--            <button onclick="topFunction()" id="myBtn" title="Go to top"></button>-->
-            <img class="arrow" onclick="topFunction()" id="myBtn" src="array_up.png" title="Powrót na górę"/>
-
+            </form>
         </div>
-        <script type="text/javascript">
-                                function scrollUp(){
-                                    $('#buttonTo').onclick(function(){
-                                        $('html, body').animate({scrollTo: 800}, 'slow');
-                                    });
-                                };
-                            </script>
-<!--                <script src="bower_components/scrollreveal/dist/scrollreveal.min.js"></script>-->
-<!--
-<script type="text/javascript">
-    window.sr = ScrollReveal();
-    sr.reveal('.left', {
-        reset: true,
-        delay: 300,
-        distance: 0
-    });
-    sr.reveal('h2, p', {
-        reset: true,
-        delay: 300
-    });
-</script>
--->
-        <script type="text/javascript">
-            window.onscroll = function(){scrollfunction()};
-            function scrollfunction(){
-                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20 ) {
-                    document.getElementById("myBtn").style.display = "block";
-                } else {
-                    document.getElementById("myBtn").style.display = "none";
-                }
-            }
-
-            function topFunction(){
-                 $('html, body').animate({scrollTop:0}, 'slow');
-            }
-        </script>
         <script src="script2.js" type="text/javascript"></script>
-         <script src="js/lightbox-plus-jquery.min.js"></script>
+        <script src="js/lightbox-plus-jquery.min.js"></script>
+        <script src="contact_script.js" type="text/javascript"></script>
     </body>
 </html>
