@@ -7,12 +7,14 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"></script>
         <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="style.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
         <link rel="stylesheet" href="css/lightbox.min.css">
         <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
         <script type="text/javascript">
             $(function () {
                 $(document).scroll(function () {
@@ -27,7 +29,7 @@
         <nav class="navbar navbar-default fixed-top" role="navigation">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" id="buttonbrand_id"></a>
+                    <a class="navbar-brand" style="height: 93px; width: 205px;" id="buttonbrand_id"></a>
                 </div>
                 <ul class="nav">
                     <li><a href="#glowna" >Strona Główna</a></li>
@@ -145,43 +147,59 @@
                 <h5 class="h5" style="text-align: center">Zapraszamy do kontaktu, chętnie wyjaśnimy, opowiemy, wycenimy.</h5>
             </div>
         </div>
-        <div class="row">
-            <div class="col" id="dane">
-                <h5 style="font-size: 30px; color: #333">ADRES</h5>
-                <p style="color: #acafba; line-height: 28px; text-align: left; margin-top: 0; margin-bottom: 0;">
-                    Teodorów 136
-                    asdasdasd
-                    asdasdasd
-                </p>
-                <h5 style="font-size: 30px; color: #333; margin-top: 50px;">TELEFON</h5>
-                <p style="color: #acafba; line-height: 28px; text-align: left; margin-top: 5px; margin-bottom: 0;">
-                    666 666 999
-                </p>
+        <div class="row" id="form-contact">
+            <div class="row" id="icon_text">
 
-                <h5 style="font-size: 30px; color: #333; margin-top: 50px;">EMAIL</h5>
-                <p style="color: #acafba; line-height: 28px; text-align: left; margin-top: 0; margin-bottom: 0;">
-                    planB@gmail.com
-                </p>
+                <div class="col-md-2-sm-2" id="contact_icon">
+                    <div class="row">
+                        <img style="max-height: 70px; max-width: 70px;" src="https://png.icons8.com/ios/100/000000/map-marker.png">
+
+                    </div>
+                    <div class="row">
+                        <img style="max-height: 70px; max-width: 70px; margin-top: 55px;"src="https://png.icons8.com/ios/100/000000/phone.png">
+
+                    </div>
+
+                    <div class="row">
+                        <img style="max-height: 70px; max-width: 70px; margin-top: 50px;" src="https://png.icons8.com/ios/100/000000/secured-letter.png">
+                    </div>
+                </div>
+                <div class="col" id="dane">
+                    <h5 style="font-size: 30px; color: #333">ADRES</h5>
+                    <p style="color: #acafba; line-height: 28px; text-align: left; margin-top: 0; margin-bottom: 0;">
+                        Teodorów 136
+                        asdasdasd
+                        asdasdasd
+                    </p>
+                    <h5 style="font-size: 30px; color: #333; margin-top: 50px;">TELEFON</h5>
+                    <p style="color: #acafba; line-height: 28px; text-align: left; margin-top: 5px; margin-bottom: 0;">
+                        666 666 999
+                    </p>
+
+                    <h5 style="font-size: 30px; color: #333; margin-top: 50px;">EMAIL</h5>
+                    <p style="color: #acafba; line-height: 28px; text-align: left; margin-top: 0; margin-bottom: 0;">
+                        planB@gmail.com
+                    </p>
+                </div>
             </div>
-
             <form class="form" id="contactForm" method="post" novalidate action="/send-script.php">
                 <div class="form-row">
-                    <label for="field-name">Name*</label>
+                    <label for="field-name">Imie</label>
                     <input type="text" name="name" required id="field-name" data-error="Wypełnij to pole" pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+">
                 </div>
                 <div class="form-row">
-                    <label for="field-email">Email*</label>
+                    <label for="field-email">Email</label>
                     <input type="email" name="email" required id="field-email" data-error="Wpisz poprawny email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
                 </div>
                 <div class="form-row">
-                    <label for="field-message">Message*</label>
+                    <label for="field-message">Wiadomość</label>
                     <textarea name="message" required data-error="Musisz wypełnić pole" id="field-message" pattern=".+"></textarea>
                 </div>
                 <div class="form-row">
                     <label class="checkbox-cnt">
                         <input type="checkbox" required data-error="Musisz wypełnić pole" name="regulation">
                         <i class="state" aria-hidden="true"></i>
-                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In libero arcu, vulputate sit amet mattis sit amet, ultrices in erat. Aenean suscipit arcu ac lorem lacinia ut scelerisque turpis commodo.</span>
+                        <span>Jakaś tam  zgoda, która jest potrzebna</span>
                     </label>
                 </div>
                 <div class="form-row">
@@ -191,6 +209,90 @@
                 </div>
             </form>
         </div>
+        <div class="row maps" style="margin-bottom: 0;">
+            <iframe style="width: 100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2449.926671478323!2d22.189479315792497!3d52.11746297973996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471f504156d8390f%3A0xd597b9c10a4d74b9!2sTeodor%C3%B3w+136%2C+08-114+Teodor%C3%B3w!5e0!3m2!1spl!2spl!4v1519826407699" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="row container-footer" style="text-align: center">
+            <div class="col-md-12 align-self-center" id="logo_stopka">
+                <img src="logo4.png" alt="logo" id="logo_stopka">
+            </div>
+            <div class="col-md-12 align-self-center">
+                <li class="list-inline-item">
+                    <a href="https://www.facebook.com/planb.meblenawymiar/" id="facebook">
+                        <i style="font-size:24px; color: white" class="fa" id="logo_fb">&#xf09a;</i>
+                    </a>
+                </li>
+            </div>
+
+            <div class="col-md-12 align-self-center" style="color: white;">
+                <h4 class="slogan_footer"> Meble na wymiar - Mariusz Pokrywczyński </h4>
+            </div>
+            <!--
+<div class="row" style="position: relative; text-align: center">
+<div class="col align-self-center">.col-md-6 .offset-md-3</div>
+</div>
+-->
+            <!--
+<div class="row">
+<img src="logo4.png" alt="logo" id="logo_stopka">
+</div>
+<div class="row">
+<li class="list-inline-item">
+<a href="#" id="facebook">
+<i style="font-size:24px; color: black" class="fa">&#xf09a;</i>
+</a>
+</li>                </div>
+<div class="col-md-4">
+<img src="logo4.png" alt="logo" id="logo_stopka">
+</div>
+<div class="col-md-4">
+<img src="logo4.png" alt="logo" id="logo_stopka">
+</div>
+-->
+
+            <!--
+<div class="col-md-4 footer-column">
+<li class="list-inline-item">
+<a href="#" id="facebook">
+<i style="font-size:24px; color: black" class="fa">&#xf09a;</i>
+</a>
+</li>
+</div>
+-->
+            <!--
+<div class="col-md-4">
+<span class="copyright">Copyright © Plan B - Meble na wymiar  2018</span>
+</div>
+<div class="col-md-4">
+<ul class="list-inline social-button">
+
+</ul>
+</div>
+<div class="col-md-4"></div>
+-->
+
+        </div>
+
+
+        <div class="row">
+            <a class="scroll-top" onclick="topFunction()" id="myBtn" title="Powrót na górę"/>
+        </div>
+
+        <script type="text/javascript">
+            window.onscroll = function(){scrollfunction()};
+            function scrollfunction(){
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20 ) {
+                    document.getElementById("myBtn").style.display = "block";
+                } else {
+                    document.getElementById("myBtn").style.display = "none";
+                }
+            }
+
+            function topFunction(){
+                $('html, body').animate({scrollTop:0}, 'slow');
+            }
+        </script>
+
         <script src="script2.js" type="text/javascript"></script>
         <script src="js/lightbox-plus-jquery.min.js"></script>
         <script src="contact_script.js" type="text/javascript"></script>

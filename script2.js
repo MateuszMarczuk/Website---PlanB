@@ -14,7 +14,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     var button = document.getElementById('buttonbrand_id');
     $(button).click(function(){
-    $("html, body").animate({ scrollTop: 0 }, 900);
+    $("html, body").animate({ scrollTop: 0, }, 900);
     return false;
  });
 });
